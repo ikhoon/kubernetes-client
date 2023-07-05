@@ -101,6 +101,7 @@
     <maven-core.version>3.9.3</maven-core.version>
     <maven-plugin-annotations.version>3.9.0</maven-plugin-annotations.version>
     <vertx.version>4.4.4</vertx.version>
+    <armeria.version>1.24.2</armeria.version>
 
     <!-- API versions -->
     <jsr305.version>3.0.2</jsr305.version>
@@ -209,6 +210,7 @@
     <module>java-generator</module>
     <module>httpclient-okhttp</module>
     <module>httpclient-vertx</module>
+    <module>httpclient-armeria</module>
   </modules>
 
   <dependencyManagement>
@@ -798,6 +800,11 @@
         <groupId>io.vertx</groupId>
         <artifactId>vertx-web-client</artifactId>
         <version>${vertx.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.linecorp.armeria</groupId>
+        <artifactId>armeria</artifactId>
+        <version>${armeria.version}</version>
       </dependency>
 
       <!-- Testing and Mocking -->
